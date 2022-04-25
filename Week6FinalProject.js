@@ -82,3 +82,14 @@ class Deck {
 let deck1 = new Deck();
 deck1.shuffle();
 console.log(deck1);
+
+/* Code test to print out onto webpage
+
+var testOutput = "";
+testOutput += doSomething('Hello', 5) + "\n";
+testOutput += '<br>' + doSomething('Hi', 5);
+
+document.getElementById('testing').innerHTML = testOutput;
+console.log(testOutput);
+
+*/
