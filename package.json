@@ -1,0 +1,23 @@
+{
+  "name": "week6finalproject",
+  "version": "1.0.0",
+  "description": "\"Week 6 Final Project: creating the War card game\"",
+  "main": "Week6FinalProject.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlithal/Week6FinalProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlithal/Week6FinalProject/issues"
+  },
+  "homepage": "https://github.com/tlithal/Week6FinalProject#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
+  }
+}
