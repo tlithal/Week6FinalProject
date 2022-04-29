@@ -189,18 +189,35 @@ class Game {
     }
 }
 
-//Initializes the deck, randomizes it and then splits it in half
-let deck = new Deck();
-deck.shuffle();
-deck.cut();
+//Function to setup the elements of the game and start it
 
-//Assign the split deck into 2 separate decks to give to each player
-let deck1 = deck.deck1;
-let deck2 = deck.deck2;
+function gameSetup() {
+    //Initializes the deck, randomizes it and then splits it in half
+    let deck = new Deck();
+    deck.shuffle();
+    deck.cut();
 
-//Initializes 2 players with a deck each
-let firstPlayer = new Player(deck1);
-let secondPlayer = new Player(deck2);
+    //Assign the split deck into 2 separate decks to give to each player
+    let deck1 = deck.deck1;
+    let deck2 = deck.deck2;
 
-//Initializes the game with the 2 players created
-let game = new Game(firstPlayer, secondPlayer);
+    //Initializes 2 players with a deck each
+    let firstPlayer = new Player(deck1);
+    let secondPlayer = new Player(deck2);
+
+    //Initializes the game with the 2 players created
+    let game = new Game(firstPlayer, secondPlayer);
+
+    game.start();
+}
+
+/* Function to clear the HTML of the logs, not needed since gameSetup will overwrite old HTML with new game,
+but used for Player clarity when using program. */
+
+function gameClear() {
+    document.getElementById('player1').innerHTML = '';
+    document.getElementById('player2').innerHTML = '';
+    document.getElementById('winner').innerHTML = '';
+    document.getElementById('testing').innerHTML = '';
+
+}
